@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="FontsFree-Net-SFProText-Semibold.ttf">
+            <string>SFProText-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FoodItemCollectionViewCell" id="gTV-IL-0wX" customClass="FoodItemCollectionViewCell" customModule="FoodDeliveryApplication" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="220" height="307"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="220" height="307"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZOE-5i-raI">
+                        <rect key="frame" x="0.0" y="0.0" width="220" height="250"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YyG-X1-LrH">
+                                <rect key="frame" x="0.0" y="37" width="220" height="270"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="food" translatesAutoresizingMaskIntoConstraints="NO" id="YSc-dV-Peo">
+                                        <rect key="frame" x="27.5" y="-36" width="165" height="165"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z3v-mB-dSf">
+                                        <rect key="frame" x="47.5" y="154" width="125" height="52"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="125" id="aez-gL-6yv"/>
+                                            <constraint firstAttribute="height" constant="52" id="eK6-uI-n9X"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="SFProText-Semibold" family="SF Pro Text" pointSize="21"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y3E-bd-SOe">
+                                        <rect key="frame" x="24" y="221" width="172" height="19"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="19" id="WfA-6L-haL"/>
+                                            <constraint firstAttribute="width" constant="172" id="aHO-L8-eQu"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="SFProText-Semibold" family="SF Pro Text" pointSize="17"/>
+                                        <color key="textColor" systemColor="systemRedColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="270" id="7AV-eA-VF8"/>
+                                    <constraint firstItem="YSc-dV-Peo" firstAttribute="centerX" secondItem="YyG-X1-LrH" secondAttribute="centerX" id="7e0-4u-Wnp"/>
+                                    <constraint firstItem="Y3E-bd-SOe" firstAttribute="top" secondItem="z3v-mB-dSf" secondAttribute="bottom" constant="15" id="AeR-EX-2nQ"/>
+                                    <constraint firstItem="YSc-dV-Peo" firstAttribute="leading" secondItem="YyG-X1-LrH" secondAttribute="leading" constant="27.5" id="KdC-O0-7rg"/>
+                                    <constraint firstItem="Y3E-bd-SOe" firstAttribute="centerX" secondItem="YyG-X1-LrH" secondAttribute="centerX" id="bvp-5E-dgu"/>
+                                    <constraint firstItem="z3v-mB-dSf" firstAttribute="top" secondItem="YSc-dV-Peo" secondAttribute="bottom" constant="25" id="caF-v2-ivE"/>
+                                    <constraint firstItem="z3v-mB-dSf" firstAttribute="centerX" secondItem="YyG-X1-LrH" secondAttribute="centerX" id="fNM-b3-TOs"/>
+                                    <constraint firstItem="YSc-dV-Peo" firstAttribute="top" secondItem="YyG-X1-LrH" secondAttribute="top" constant="-36" id="kWL-WE-VSf"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="YyG-X1-LrH" firstAttribute="leading" secondItem="ZOE-5i-raI" secondAttribute="leading" id="Djg-5X-ZSo"/>
+                            <constraint firstAttribute="bottom" secondItem="YyG-X1-LrH" secondAttribute="bottom" id="kfZ-rC-XhW"/>
+                            <constraint firstAttribute="trailing" secondItem="YyG-X1-LrH" secondAttribute="trailing" id="qkk-Jk-gZ6"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="ZOE-5i-raI" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="4Kt-cb-sKO"/>
+                <constraint firstAttribute="trailing" secondItem="ZOE-5i-raI" secondAttribute="trailing" id="jhc-vW-p80"/>
+                <constraint firstAttribute="bottom" secondItem="ZOE-5i-raI" secondAttribute="bottom" id="l45-C1-kQa"/>
+                <constraint firstItem="ZOE-5i-raI" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="xdV-bV-ID9"/>
+            </constraints>
+            <size key="customSize" width="794" height="908"/>
+            <connections>
+                <outlet property="backgroundRectView" destination="YyG-X1-LrH" id="hbx-PW-imx"/>
+                <outlet property="foodImageView" destination="YSc-dV-Peo" id="IzQ-IY-ehQ"/>
+                <outlet property="foodNameLabel" destination="z3v-mB-dSf" id="beU-Cd-WxK"/>
+                <outlet property="foodPriceLabel" destination="Y3E-bd-SOe" id="t0k-PV-QpM"/>
+            </connections>
+            <point key="canvasLocation" x="613.04347826086962" y="271.54017857142856"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="food" width="165" height="165"/>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
